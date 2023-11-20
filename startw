@@ -1,0 +1,41 @@
+#!/bin/bash
+
+WALLPAPERS_DIR="$HOME/Pictures/Wallpaper"
+WALLPAPER="nord.png"
+
+#terminate already running instances
+killall -q somebar someblocks dwl foot
+
+sleep 1
+
+# Wait until the processes have been shut down
+while pgrep -x somebar >/dev/null; do sleep 1; done
+while pgrep -x someblocks >/dev/null; do sleep 1; done
+while pgrep -x dwl >/dev/null; do sleep 1; done
+while pgrep -x foot >/dev/null; do sleep 1; done
+
+sleep 1
+
+dwl -s 'foot --server <&- & somebar' &
+
+# Sleep to allow services to start up
+sleep 2
+
+someblocks &
+
+# Set WAYLAND_DISPLAY for swaybg
+export WAYLAND_DISPLAY=wayland-0
+
+#export firefox to run wayland
+export MOZ_ENABLE_WAYLAND=1
+
+# Launch the dbus session and export the variables
+eval $(dbus-launch --sh-syntax)
+
+sleep 1
+
+pipewire &
+
+# Start the wallpaper
+swaybg -i "$WALLPAPERS_DIR/$WALLPAPER" -m fit &
+

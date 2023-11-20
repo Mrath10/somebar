@@ -1,0 +1,89 @@
+Build started at 2023-11-10T18:27:06.168570
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 1.2.0
+Source dir: /home/mayvin/somebar
+Build dir: /home/mayvin/somebar/build
+Build type: native build
+Project name: somebar
+Project version: 0.1.0
+C compiler for the host machine: cc (gcc 12.2.0 "cc (GCC) 12.2.0")
+C linker for the host machine: cc ld.bfd 2.39
+-----------
+Detecting linker via: `gcc-ar --version` -> 0
+stdout:
+GNU ar (GNU Binutils) 2.39
+Copyright (C) 2022 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+-----------
+C++ compiler for the host machine: c++ (gcc 12.2.0 "c++ (GCC) 12.2.0")
+C++ linker for the host machine: c++ ld.bfd 2.39
+C compiler for the build machine: cc (gcc 12.2.0 "cc (GCC) 12.2.0")
+C linker for the build machine: cc ld.bfd 2.39
+-----------
+Detecting linker via: `gcc-ar --version` -> 0
+stdout:
+GNU ar (GNU Binutils) 2.39
+Copyright (C) 2022 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) any later version.
+This program has absolutely no warranty.
+-----------
+C++ compiler for the build machine: c++ (gcc 12.2.0 "c++ (GCC) 12.2.0")
+C++ linker for the build machine: c++ ld.bfd 2.39
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Dependency wayland-client found: YES 1.22.0 (cached)
+Dependency wayland-cursor found: YES 1.22.0 (cached)
+Dependency cairo found: YES 1.18.0 (cached)
+Dependency pango found: YES 1.50.14 (cached)
+Dependency pangocairo found: YES 1.50.14 (cached)
+Program wayland-scanner found: YES (/usr/bin/wayland-scanner)
+Dependency wayland-protocols found: YES 1.32 (cached)
+env[PKG_CONFIG_PATH]: 
+-----------
+Called: `/usr/bin/pkg-config --variable=pkgdatadir wayland-protocols` -> 0
+stdout:
+//usr/share/wayland-protocols
+-----------
+Got pkgconfig variable pkgdatadir : //usr/share/wayland-protocols
+Build targets in project: 1
+
+Found ninja-1.11.1 at /usr/bin/ninja
+Running compile:
+Working directory:  /tmp/tmprvy2gubo
+Code:
+ int i = static_cast<int>(0);
+-----------
+Command line: `c++ /tmp/tmprvy2gubo/testfile.cpp -o /tmp/tmprvy2gubo/output.obj -D_FILE_OFFSET_BITS=64 -c -std=c++17` -> 0
+Compiler accepts -std=c++17: YES
+Running compile:
+Working directory:  /home/mayvin/somebar/build/meson-private/tmp5e1u9w75
+Code:
+ 
+-----------
+Command line: `cc /home/mayvin/somebar/build/meson-private/tmp5e1u9w75/testfile.c -o /home/mayvin/somebar/build/meson-private/tmp5e1u9w75/output.obj -c -D_FILE_OFFSET_BITS=64 -O0 --print-search-dirs` -> 0
+stdout:
+install: /usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/
+programs: =/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/
+libraries: =/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/../lib64/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-unknown-linux-gnu/12.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-unknown-linux-gnu/12.2.0/:/lib/../lib64/:/usr/lib/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/
+-----------
+Running compile:
+Working directory:  /home/mayvin/somebar/build/meson-private/tmpk26c92xa
+Code:
+ 
+-----------
+Command line: `c++ /home/mayvin/somebar/build/meson-private/tmpk26c92xa/testfile.cpp -o /home/mayvin/somebar/build/meson-private/tmpk26c92xa/output.obj -c -Wno-parentheses -D_FILE_OFFSET_BITS=64 -O0 -fpermissive --print-search-dirs` -> 0
+stdout:
+install: /usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/
+programs: =/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/bin/
+libraries: =/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/../lib64/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../x86_64-unknown-linux-gnu/12.2.0/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../lib64/:/lib/x86_64-unknown-linux-gnu/12.2.0/:/lib/../lib64/:/usr/lib/x86_64-unknown-linux-gnu/12.2.0/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../../x86_64-unknown-linux-gnu/lib/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/12.2.0/../../../:/lib/:/usr/lib/
+-----------

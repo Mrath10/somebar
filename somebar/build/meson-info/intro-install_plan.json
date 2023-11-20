@@ -1,0 +1,1 @@
+{"targets": {"/home/mayvin/somebar/build/somebar": {"destination": "{bindir}/somebar", "tag": "runtime", "subproject": null}}, "man": {"/home/mayvin/somebar/somebar.1": {"destination": "{mandir}/man1/somebar.1", "tag": "man", "subproject": null}}}
